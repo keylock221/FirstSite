@@ -207,39 +207,101 @@ nav {
     justify-content: center;
 }
 
-.card_item {
+.card_item_basic {
     width: 90%;
     background-color: #47A76A;
+}
+
+.card_item_gold {
+    width: 90%;
+    background-color: #fdd017;
+}
+
+.card_item_pers {
+    width: 90%;
+    background-color: #d9dad8;
 }
 
 .card_inner {
     position: relative;
 }
 
-
-.card_inner:hover .card_image {
-    transform: translate3d(-10px, -10px, 0);
-}
-
 .card_inner:hover .card_text {
     opacity: 1;
 }
 
-.card_inner:hover .card_image img {
+
+
+.card_inner:hover .card_image_basic {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.card_inner:hover .card_image_basic img {
     opacity: .1;
 }
 
-.card_image {
+.card_image_basic {
     background: linear-gradient(to bottom, #408000, #008000);
     transition: transform .2s linear;
 }
 
-.card_image img {
+.card_image_basic img {
     transition: opacity .1s linear;
     display: block;
     width: 100%;
     height: auto;
 }
+
+
+
+
+
+.card_inner:hover .card_image_gold {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.card_inner:hover .card_image_gold img {
+    opacity: .1;
+}
+
+.card_image_gold {
+    background: linear-gradient(to bottom, #fbb117, #fdd017);
+    transition: transform .2s linear;
+}
+
+.card_image_gold img {
+    transition: opacity .1s linear;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.card_inner:hover .card_image_pers {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.card_inner:hover .card_image_pers img {
+    opacity: .1;
+}
+
+.card_image_pers {
+    background: linear-gradient(to bottom, #9fa0a4, #d9dad8);
+    transition: transform .2s linear;
+}
+
+.card_image_pers img {
+    transition: opacity .1s linear;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
 
 .card_text {
     width: 90%;
